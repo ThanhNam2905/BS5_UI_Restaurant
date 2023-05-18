@@ -6,9 +6,54 @@
     --primary-color: #fea116;
     --light-color: #f1f8ff;
     --dark-color: #0f172b;
+    --white-color: #fff;
 }
 
-html,
+/* html,
 body {
     font-family: 'Nunito', sans-serif;
+} */
+
+/* ------------- Utitlies style CSS ----------------- */
+.btn {
+    transition: all 0.5s linear;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1.5px;
+}
+.btn-primary {
+    color: var(--white-color);
+}
+
+/* ------------- Header section style CSS ----------------- */
+.banner-slider {
+    background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.7)), url(../images/bg-hero.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-slider img {
+    animation: imgRotate 50s linear infinite;
+}
+@keyframes imgRotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------- Services section style CSS ----------------- */
+.service-item {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s linear;
+}
+.service-item:hover {
+    background-color: var(--primary-color);
+    transition: all 0.4s linear;
+}
+.service-item * {
+    transition: all 0.4s linear;
+}
+.service-item:hover * {
+    color: var(--light-color) !important;
 }

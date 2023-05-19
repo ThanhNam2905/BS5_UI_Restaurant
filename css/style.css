@@ -97,6 +97,71 @@ body {
     border-bottom: 3px solid var(--primary-color);
 }
 
+/* ------------- Team section style CSS ----------------- */
+.team__item {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    height: calc(100% - 38px);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.team__item:hover {
+    height: 100%;
+}
+.team__item:hover .team__contact a.btn {
+    border-radius: 40px 40px 0 0;
+    transition: all 0.3s linear;
+}
+.team_img img {
+    transition: all 0.3s linear;
+}
+.team__item:hover .team_img img {
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+
+/* ------------- Team section style CSS ----------------- */
+.testimonials__carousel .owl-item.center .testimonials__item {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    transition: all 0.3s linear;
+}
+.testimonials__carousel .owl-item.center .testimonials__item * {
+    color: var(--light-color) !important;
+    transition: all 0.3s linear;
+}
+.testimonials__carousel .owl-dots {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonials__carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+    border-radius: 18px;
+    background-color: var(--light-color);
+    border: 1px solid #cccccc;
+    transition: all 0.3s linear;
+}
+.testimonials__carousel .owl-dot.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.testimonials__carousel .testimonials__item:hover {
+    cursor: pointer;
+}
+.testimonials__item--info p {
+    font-size: 14px;
+}
+
+
+
+
+
+
 /* ------------- Footer section style CSS ----------------- */
 .footer {
     background-color: #0F172B;

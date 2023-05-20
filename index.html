@@ -24,6 +24,10 @@
 
     <div class="root">
         <div class="root__wrapper container-xxl bg-white p-0">
+            <button type="button" class="btn btn-lg btn-primary btn__scroll-top rounded-circle">
+                <i class="bi bi-arrow-up mt-1 d-inline-block"></i>
+            </button>   <!-- End scroll-to-top -->
+
             <header class="header">
                 <nav>
 
@@ -311,6 +315,71 @@
                     </div>
                 </section>  <!-- End menu section -->
 
+                <section id="booking">
+                    <div class="container-xxl py-5 px-0">
+                        <div class="row g-0">
+                            <div class="col-sm-6 wow fadeInLeft">
+                                <div class="video">
+                                    <button class="btn--play" type="button" data-bs-toggle="modal" data-src="" data-bs-target="#videoModal">
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 bg-dark wow fadeInRight p-5">
+                                <h3 class="booking__sub-title fs-4 text-capitalize ff--secondary text-primary fw-normal position-relative d-inline-block">Reservation</h3>
+                                <h1 class="text-capitalize text-white mb-4">Book A Table Online</h1>
+                                <form action="" class="form-booking">
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-lg-6">
+                                            <div class="form-floating">
+                                                <input type="text" id="name" class="form-control w-100 py-3 px-4 rounded-3" placeholder="Your Name">
+                                                <label for="name" class="text-capitalize">Your Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-floating">
+                                                <input type="email" id="email" class="form-control w-100 py-3 px-4 rounded-3" placeholder="Your Email">
+                                                <label for="email" class="text-capitalize">Your Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-floating date" id="date1" data-target-input="nearest">
+                                                <input 
+                                                    type="datetime" id="date-booking" placeholder="Date & Time"
+                                                    class="form-control w-100 py-3 px-4 rounded-3 datatimepicker-input"
+                                                    data-target="#date1"
+                                                    data-toggle="datetimepicker"
+                                                    value="05/19/2023 13:30PM">
+                                                <label for="date-booking" class="text-capitalize mb-3 d-block">Date & Time</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-floating">
+                                                <select name="select1" id="select1" class="form-select rounded-3">
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                </select>
+                                                <label for="select1" class="text-capitalize">No of Option</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-floating">
+                                                <textarea style="height: 160px;" name="" id="message" cols="60" rows="10" class="form-control" placeholder="Your Note Message"></textarea>
+                                                <label for="message" class="text-capitalize">Your Note Message</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <button type="submit" class="btn btn-primary w-100 mt-4 rounded-3 py-3 text-uppercase">Book Now</button>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>  <!-- End booking section -->
+
                 <section id="teams">
                     <div class="container-xxl py-5">
                         <div class="container px-4">
@@ -329,9 +398,9 @@
                                             <p class="mb-0 text-capitalize" style="font-size: 14px;">Designation</p>
                                         </div>
                                         <div class="team__contact d-flex justify-content-center mt-3">
-                                            <a href="#" class="btn btn-square btn-primary mx-1"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="#" class="btn btn-square btn-primary mx-1"><i class="fab fa-twitter"></i></a>
-                                            <a href="#" class="btn btn-square btn-primary mx-1"><i class="fab fa-instagram"></i></a>
+                                            <a href="#" class="btn btn-square text-white mx-1"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="btn btn-square text-white mx-1"><i class="fab fa-twitter"></i></a>
+                                            <a href="#" class="btn btn-square text-white mx-1"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -345,9 +414,9 @@
                                             <p class="mb-0 text-capitalize" style="font-size: 14px;">Designation</p>
                                         </div>
                                         <div class="team__contact d-flex justify-content-center mt-3">
-                                            <a href="#" class="btn btn-square btn-primary mx-1"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="#" class="btn btn-square btn-primary mx-1"><i class="fab fa-twitter"></i></a>
-                                            <a href="#" class="btn btn-square btn-primary mx-1"><i class="fab fa-instagram"></i></a>
+                                            <a href="#" class="btn btn-square text-white mx-1"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="btn btn-square text-white mx-1"><i class="fab fa-twitter"></i></a>
+                                            <a href="#" class="btn btn-square text-white mx-1"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -361,9 +430,9 @@
                                             <p class="mb-0 text-capitalize" style="font-size: 14px;">Designation</p>
                                         </div>
                                         <div class="team__contact d-flex justify-content-center mt-3">
-                                            <a href="#" class="btn btn-square btn-primary mx-1"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="#" class="btn btn-square btn-primary mx-1"><i class="fab fa-twitter"></i></a>
-                                            <a href="#" class="btn btn-square btn-primary mx-1"><i class="fab fa-instagram"></i></a>
+                                            <a href="#" class="btn btn-square text-white mx-1"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="btn btn-square text-white mx-1"><i class="fab fa-twitter"></i></a>
+                                            <a href="#" class="btn btn-square text-white mx-1"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -377,9 +446,9 @@
                                             <p class="mb-0 text-capitalize" style="font-size: 14px;">Designation</p>
                                         </div>
                                         <div class="team__contact d-flex justify-content-center mt-3">
-                                            <a href="#" class="btn btn-square btn-primary mx-1"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="#" class="btn btn-square btn-primary mx-1"><i class="fab fa-twitter"></i></a>
-                                            <a href="#" class="btn btn-square btn-primary mx-1"><i class="fab fa-instagram"></i></a>
+                                            <a href="#" class="btn btn-square text-white mx-1"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="btn btn-square text-white mx-1"><i class="fab fa-twitter"></i></a>
+                                            <a href="#" class="btn btn-square text-white mx-1"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -396,7 +465,7 @@
                                 <h1 class="mt-1">Our Clients Say!!!</h1>
                             </div>
                             <div class="testimonials__carousel owl-carousel wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="testimonials__item border rounded-2 p-4 bg-transparent">
+                                <div class="testimonials__item border rounded-2 p-4 bg-transparent shadow">
                                     <i class="fa fa-quote-left fa-3x text-primary"></i>
                                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                                     <div class="testimonials__item--author d-inline-flex align-items-center">
@@ -407,7 +476,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonials__item border rounded-2 p-4 bg-transparent">
+                                <div class="testimonials__item border rounded-2 p-4 bg-transparent shadow">
                                     <i class="fa fa-quote-left fa-3x text-primary"></i>
                                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                                     <div class="testimonials__item--author d-inline-flex align-items-center">
@@ -418,7 +487,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonials__item border rounded-2 p-4 bg-transparent">
+                                <div class="testimonials__item border rounded-2 p-4 bg-transparent shadow">
                                     <i class="fa fa-quote-left fa-3x text-primary"></i>
                                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                                     <div class="testimonials__item--author d-inline-flex align-items-center">
@@ -429,7 +498,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testimonials__item border rounded-2 p-4 bg-transparent">
+                                <div class="testimonials__item border rounded-2 p-4 bg-transparent shadow">
                                     <i class="fa fa-quote-left fa-3x text-primary"></i>
                                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                                     <div class="testimonials__item--author d-inline-flex align-items-center">
@@ -444,7 +513,6 @@
                         </div>
                     </div>
                 </section>  <!-- End testimonials section -->
-
             </main>   <!-- End main -->
             <footer class="footer">
                 <div class="container-xxl pt-5 mt-4">

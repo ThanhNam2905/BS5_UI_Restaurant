@@ -31,6 +31,19 @@
             }
         }
     })
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 400) {
+            $('.btn__scroll-top').fadeIn('slow');
+        }
+        else {
+            $('.btn__scroll-top').fadeOut('slow');
+        }
+    });
+
+    $('.btn__scroll-top').click(function() {
+        $('html, body').animate({scrollTop: 0}, 700, 'easeInOutExpo');
+        return false;
+    });
    
 })(jQuery);
 

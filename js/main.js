@@ -5,10 +5,10 @@
     new WOW().init();
     
     // CounterUp js
-    // $('[data-toggle="counter-up"]').counterUp({
-    //     dalay: 10,
-    //     time: 3000,
-    // });
+    $('[data-toggle="counter-up"]').counterUp({
+        dalay: 10,
+        time: 3000,
+    });
 
     // Owl-Carousel js
     $('.testimonials__carousel').owlCarousel({
@@ -31,6 +31,7 @@
             }
         }
     })
+
     $(window).scroll(function() {
         if($(this).scrollTop() > 400) {
             $('.btn__scroll-top').fadeIn('slow');
@@ -43,6 +44,15 @@
     $('.btn__scroll-top').click(function() {
         $('html, body').animate({scrollTop: 0}, 700, 'easeInOutExpo');
         return false;
+    });
+
+    // Sticky Navbar
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+            $('.navbar').addClass('sticky-top shadow-sm');
+        } else {
+            $('.navbar').removeClass('sticky-top shadow-sm');
+        }
     });
    
 })(jQuery);

@@ -54,6 +54,24 @@
         transform: rotate(360deg);
     }
 }
+.navigation-menu ul.navbar-nav .nav-item .nav-link {
+    position: relative;
+    margin-left: 25px;
+    padding: 30px 0;
+    font-size: 16px;
+    color: var(--light-color);
+    outline: none;
+    text-transform: capitalize;
+    transition: all 0.4s linear;
+}
+.navigation-menu ul.navbar-nav .nav-item .nav-link.active {
+    transition: all 0.4s linear;
+    color: var(--primary-color);
+}
+.navigation-menu ul.navbar-nav .nav-item .nav-link:hover {
+    transition: all 0.4s linear;
+    color: var(--primary-color);
+}
 
 /* ------------- Services section style CSS ----------------- */
 .service-item {
@@ -377,4 +395,46 @@
     border-color: var(--light-color);
     box-shadow: 0 5px 10px #1DA1F2;
     transition: all 0.3s linear;
+}
+
+
+/* ------------- Media queries CSS ----------------- */
+@media (max-width: 991.98px) {
+    .sticky-top.navbar-dark {
+        position: relative;
+    }
+
+    .navbar-dark .navbar-collapse {
+        margin-top: 15px;
+        border-top: 1px solid rgba(255, 255, 255, .1)
+    }
+
+    .navbar-dark .navbar-nav .nav-link,
+    .sticky-top.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        margin-left: 0;
+    }
+
+    .navbar-dark .navbar-brand img {
+        max-height: 45px;
+    }
+}
+@media (min-width: 992px) {
+    .nav-dark {
+        position: absolute;
+        width: 100% !important;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        transition: all 0.4s linear;
+    }
+    .sticky-top.navbar-dark {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        background: var(--dark-color) !important;
+        transition: all 0.4s linear;
+    }
 }
